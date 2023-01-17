@@ -21,6 +21,5 @@ public class HelloController {
     @ResponseBody
     public String addOne(@PathVariable int number) {
         return number + " plus one is " + (number + 1) + "!";
-        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
     }
 }
