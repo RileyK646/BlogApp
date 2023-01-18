@@ -1,4 +1,4 @@
-package com.codeup.blogapp;
+package com.codeup.blogapp.controllers;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -25,5 +25,21 @@ public class PostController {
     public String create() {
         return "create a new post";
     }
+   /* Model model;
+
+    private final PostRepository postDao;
+
+    public  PostController(PostRepository postDao) {
+        this.postDao = postDao;
+    }
+    @GetMapping
+    public String getPosts(){
+        List<Post> posts = postDao.findAll();
+        Post currentPost = postDao.getOne(1l);
+
+        model.addAttribute("posts", posts);
+        return "posts/show";
+
+    }*/
 
 }

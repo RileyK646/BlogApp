@@ -1,6 +1,6 @@
-package com.codeup.blogapp;
+/*
+package com.codeup.blogapp.controllers;
 
-import ch.qos.logback.core.model.Model;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -10,12 +10,14 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-public class DiceRoller {
+public class DiceRollController {
 private final Random random = new Random();
+
     @GetMapping("/roll-dice")
     public String showRoll(){
         return "roll-dice";
     }
+
    @PostMapping("/roll-dice")
     public String rollDice(@RequestParam(name="guess") int guess, Model model) {
         List<Integer> rolls = new ArrayList<>();
@@ -34,3 +36,4 @@ private final Random random = new Random();
        return "roll-dice-n";
    }
 }
+*/
