@@ -5,7 +5,7 @@ import jakarta.persistence.*;
 import org.springframework.data.annotation.Id;
 
 @Entity
-@Table(name = "exercises")
+@Table(name = "posts")
 public class Post {
     @jakarta.persistence.Id
     @Id

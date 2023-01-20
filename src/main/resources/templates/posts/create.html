@@ -7,12 +7,13 @@
 <body>
 <h1> Create form</h1>
 <h1></h1>
-<form action="@{/posts/create}" method="post" th:object="${post}">
-  <label for="add_title">Title</label>
-  <input class="field" id="add_title" name="addTitle" th:field="*{title}" type="text">
-  <label for="add_body"> Body</label>
-  <input type="text" name="addBody" id="add_body" class="field">
-  <button>Create</button>
+<form action="/ads/create" method="post">
+  <label>title</label>
+  <input name="title">
+  <label>body</label>
+  <input name="body">
+  <button type="submit">Submit</button>
 </form>
+
 </body>
 </html>
