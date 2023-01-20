@@ -1,3 +1,4 @@
+/*
 package com.codeup.blogapp.controllers;
 
 import org.springframework.stereotype.Controller;
@@ -14,7 +15,9 @@ public class HelloController {
 
 
     @GetMapping("/hello/{name}")
-    /*@ResponseBody*/
+    */
+/*@ResponseBody*//*
+
     public String sayHello(@PathVariable String name, Model model) {
         model.addAttribute("name", name);
         return "hello";
@@ -38,3 +41,4 @@ public class HelloController {
         return number + " plus one is " + (number + 1) + "!";
     }
 }
+*/
