@@ -19,7 +19,15 @@ public class Post {
     private String body;
 
     @OneToOne
-    private User owner;
+    private User user;
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
 
     public Post() {}
 
